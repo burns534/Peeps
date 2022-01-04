@@ -8,7 +8,7 @@
 #include <metal_stdlib>
 using namespace metal;
 
-kernel void add_arrays(device unsigned char *arr [[buffer(0)]],
+kernel void fade_signals(device unsigned char *arr [[buffer(0)]],
                        constant const unsigned char& fade[[buffer(1)]],
                        uint index [[thread_position_in_grid]]) {
     if (arr[index] - fade > 0) {

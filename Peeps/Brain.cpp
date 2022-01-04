@@ -10,7 +10,7 @@
 Brain::Brain() {}
 
 void Brain::init(Genome *g) {
-    this->layers = g->layers;
+    this->layers = g->shape;
 //    uint8_t input_width[layers.size() -1];
     input_width = (uint8_t *) malloc(layers.size());
     input_buffer_length = 0;

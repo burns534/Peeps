@@ -35,7 +35,7 @@ void Signals::init(uint16_t width, uint16_t height, uint8_t count, uint8_t fade)
         exit(1);
     }
     
-    MTL::Function *signal_function = default_library->newFunction(NS::String::string("add_arrays", NS::ASCIIStringEncoding));
+    MTL::Function *signal_function = default_library->newFunction(NS::String::string("fade_signals", NS::ASCIIStringEncoding));
     
     if (signal_function == nullptr) {
         puts("Failed to find the signal function");
@@ -52,7 +52,6 @@ void Signals::init(uint16_t width, uint16_t height, uint8_t count, uint8_t fade)
         printf("Failed to create pipeline object: %s\n", error->localizedDescription()->cString(NS::ASCIIStringEncoding));
         exit(1);
     }
-    
     
     command_queue = device->newCommandQueue();
     

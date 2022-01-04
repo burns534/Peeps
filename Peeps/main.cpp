@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
     Gene gene10 = Gene(2, 1, 3, 1, -0.5f, 1.0f);
     
     Genome test_genome;
-    test_genome.layers = { 2, 1, 2, 2 };
+    test_genome.shape = { 2, 1, 2, 2 };
     test_genome.genes = {
         gene1, gene2, gene3, gene4,
         gene5, gene6, gene7, gene8,
@@ -58,7 +58,6 @@ int main(int argc, const char * argv[]) {
         printf("input width [%d]: %d\n", i, test_brain.input_width[i]);
         print_matrix(test_brain.matrices[i], test_brain.input_width[i + 1], test_brain.layers[i + 1]);
     }
-//    print_matrix(test_brain.matrices[0], 2, 1);
     
     float test_input[2] = { 0.1f, -0.4f };
     float test_output[2];
@@ -67,6 +66,10 @@ int main(int argc, const char * argv[]) {
     
     print_vector(test_output, 2);
     
+    
+    Genome test_genome2;
+    test_genome2.random_init({3, 3, 3, 3}, 12);
+    test_genome2.print_genome();
     
     
     return 0;
