@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275C720F278649D500C13C05 /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 275C720D278649D500C13C05 /* Grid.cpp */; };
 		2766308B2783623200FA34C5 /* Brain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276630892783623200FA34C5 /* Brain.cpp */; };
 		2766308D27836E8400FA34C5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2766308C27836E8400FA34C5 /* Accelerate.framework */; };
 		2766309027847F8200FA34C5 /* Genome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2766308E27847F8200FA34C5 /* Genome.cpp */; };
+		276630932785D8A200FA34C5 /* imageWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276630912785D8A100FA34C5 /* imageWriter.cpp */; };
+		276630962785DB3900FA34C5 /* ParamManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276630942785DB3900FA34C5 /* ParamManager.cpp */; };
+		276630992785EB9C00FA34C5 /* Peep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276630972785EB9C00FA34C5 /* Peep.cpp */; };
+		2766309C2785FB6300FA34C5 /* PeepManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2766309A2785FB6300FA34C5 /* PeepManager.cpp */; };
 		27F1CE6127832FEE00A5FB81 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F1CE6027832FEE00A5FB81 /* main.cpp */; };
 		27F1CE692783332700A5FB81 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F1CE682783332700A5FB81 /* Metal.framework */; };
 		27F1CE6B2783332D00A5FB81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F1CE6A2783332D00A5FB81 /* QuartzCore.framework */; };
@@ -31,11 +36,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		275C720D278649D500C13C05 /* Grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
+		275C720E278649D500C13C05 /* Grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Grid.hpp; sourceTree = "<group>"; };
 		276630892783623200FA34C5 /* Brain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Brain.cpp; sourceTree = "<group>"; };
 		2766308A2783623200FA34C5 /* Brain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Brain.hpp; sourceTree = "<group>"; };
 		2766308C27836E8400FA34C5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		2766308E27847F8200FA34C5 /* Genome.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Genome.cpp; sourceTree = "<group>"; };
 		2766308F27847F8200FA34C5 /* Genome.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Genome.hpp; sourceTree = "<group>"; };
+		276630912785D8A100FA34C5 /* imageWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imageWriter.cpp; path = ../../biosim4/src/imageWriter.cpp; sourceTree = "<group>"; };
+		276630922785D8A100FA34C5 /* imageWriter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = imageWriter.hpp; path = ../../biosim4/src/imageWriter.hpp; sourceTree = "<group>"; };
+		276630942785DB3900FA34C5 /* ParamManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParamManager.cpp; path = ../../biosim4/src/ParamManager.cpp; sourceTree = "<group>"; };
+		276630952785DB3900FA34C5 /* ParamManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParamManager.hpp; path = ../../biosim4/src/ParamManager.hpp; sourceTree = "<group>"; };
+		276630972785EB9C00FA34C5 /* Peep.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Peep.cpp; sourceTree = "<group>"; };
+		276630982785EB9C00FA34C5 /* Peep.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Peep.hpp; sourceTree = "<group>"; };
+		2766309A2785FB6300FA34C5 /* PeepManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PeepManager.cpp; sourceTree = "<group>"; };
+		2766309B2785FB6300FA34C5 /* PeepManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PeepManager.hpp; sourceTree = "<group>"; };
+		27CB5CFF2788A0490024990E /* Peeps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Peeps.entitlements; sourceTree = "<group>"; };
+		27CB5D002788A95E0024990E /* biosim4.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = biosim4.ini; sourceTree = "<group>"; };
 		27F1CE5D27832FEE00A5FB81 /* Peeps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Peeps; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F1CE6027832FEE00A5FB81 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		27F1CE682783332700A5FB81 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
@@ -165,7 +182,15 @@
 		27F1CE5F27832FEE00A5FB81 /* Peeps */ = {
 			isa = PBXGroup;
 			children = (
+				27CB5CFF2788A0490024990E /* Peeps.entitlements */,
+				276630942785DB3900FA34C5 /* ParamManager.cpp */,
+				276630952785DB3900FA34C5 /* ParamManager.hpp */,
+				276630912785D8A100FA34C5 /* imageWriter.cpp */,
+				276630922785D8A100FA34C5 /* imageWriter.hpp */,
 				27F1CE6027832FEE00A5FB81 /* main.cpp */,
+				27CB5D002788A95E0024990E /* biosim4.ini */,
+				275C720D278649D500C13C05 /* Grid.cpp */,
+				275C720E278649D500C13C05 /* Grid.hpp */,
 				27F1CE6E2783338E00A5FB81 /* Signals.cpp */,
 				27F1CE6F2783338E00A5FB81 /* Signals.hpp */,
 				27F1CECA2783366C00A5FB81 /* signal.metal */,
@@ -173,6 +198,10 @@
 				2766308A2783623200FA34C5 /* Brain.hpp */,
 				2766308E27847F8200FA34C5 /* Genome.cpp */,
 				2766308F27847F8200FA34C5 /* Genome.hpp */,
+				276630972785EB9C00FA34C5 /* Peep.cpp */,
+				276630982785EB9C00FA34C5 /* Peep.hpp */,
+				2766309A2785FB6300FA34C5 /* PeepManager.cpp */,
+				2766309B2785FB6300FA34C5 /* PeepManager.hpp */,
 			);
 			path = Peeps;
 			sourceTree = "<group>";
@@ -367,11 +396,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276630932785D8A200FA34C5 /* imageWriter.cpp in Sources */,
 				2766309027847F8200FA34C5 /* Genome.cpp in Sources */,
 				27F1CECB2783366C00A5FB81 /* signal.metal in Sources */,
+				276630992785EB9C00FA34C5 /* Peep.cpp in Sources */,
 				27F1CE6127832FEE00A5FB81 /* main.cpp in Sources */,
 				2766308B2783623200FA34C5 /* Brain.cpp in Sources */,
+				2766309C2785FB6300FA34C5 /* PeepManager.cpp in Sources */,
 				27F1CE702783338E00A5FB81 /* Signals.cpp in Sources */,
+				276630962785DB3900FA34C5 /* ParamManager.cpp in Sources */,
+				275C720F278649D500C13C05 /* Grid.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,11 +463,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "($PROJECT_DIR)/metal-cpp/";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/metal-cpp/",
+					/opt/homebrew/opt/opencv/include/opencv4,
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -483,10 +522,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "($PROJECT_DIR)/metal-cpp/";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/metal-cpp/",
+					/opt/homebrew/opt/opencv/include/opencv4,
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -494,10 +538,22 @@
 		27F1CE6527832FEE00A5FB81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Peeps/Peeps.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7TDWR6J46;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/metal-cpp";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/metal-cpp",
+					/opt/homebrew/opt/opencv/include/opencv4,
+				);
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/opt/opencv/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_videoio",
+					"-lopencv_imgproc",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -505,10 +561,22 @@
 		27F1CE6627832FEE00A5FB81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Peeps/Peeps.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7TDWR6J46;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/metal-cpp";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/metal-cpp",
+					/opt/homebrew/opt/opencv/include/opencv4,
+				);
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/opt/opencv/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_videoio",
+					"-lopencv_imgproc",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

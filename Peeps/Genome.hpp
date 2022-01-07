@@ -24,7 +24,7 @@ struct Gene {
 struct Genome {
     std::vector<Gene> genes;
     std::vector<uint8_t> shape;
-    void random_init(std::vector<uint8_t> shape, uint16_t gene_count);
+    void random_init();
     Genome * mate(Genome *p1, Genome *p2);
     void print_genome();
 };
